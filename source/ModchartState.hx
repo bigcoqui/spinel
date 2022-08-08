@@ -346,8 +346,8 @@ class ModchartState
 				
 				//shaders = new Array<LuaShader>();
 
-				var result = LuaL.dostring(lua, openfl.utils.Assets.getText("assets/data" + PlayState.SONG.song.toLowerCase().replace(' ','-') + "/modchart.lua"); // execute le file
-
+				var result = LuaL.dostring(lua, openfl.utils.Assets.getText("assets/data" + PlayState.SONG.song.toLowerCase().replace(' ','-') + "/modchart.lua")); // execute le file
+		
 				if (result != 0)
 				{
 					Application.current.window.alert("LUA COMPILE ERROR:\n" + Lua.tostring(lua,result),"Kade Engine Modcharts");
