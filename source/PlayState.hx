@@ -1502,6 +1502,8 @@ class PlayState extends MusicBeatState
 
 	var luaWiggles:Array<WiggleEffect> = [];
 
+	var luaModchart:ModchartState = null;
+
 	function startCountdown():Void
 	{
 		#if android
